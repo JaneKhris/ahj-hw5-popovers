@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  position: relative;
+}
+
+.widget {
+
+  text-align: center;
+  padding: 50px;
+  position: relative;
+
+}
+
+/* .btn {
+
+} */
+.popover {
+  position: absolute;
+  /* left: 50px; */
+  width: 100px;
+  padding: 5px;
+  margin: 20;
+}
+
+
+.popover-text {
+  font-style: italic;
+}
