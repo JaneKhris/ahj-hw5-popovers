@@ -11,13 +11,9 @@ body {
 
 }
 
-/* .btn {
-
-} */
 .popover {
   position: absolute;
-  /* left: 50px; */
-  width: 100px;
+  width: 200px;
   padding: 5px;
   margin: 20;
 }

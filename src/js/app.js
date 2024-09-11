@@ -12,7 +12,4 @@ btn.addEventListener('click', (e)=>{
     else {
         too.removeTooltip()
     }
-    // console.log('click');
-    // console.log(e.target.getAttribute('title'))
-    // too.showTooltip(e.target.getAttribute('title'),e.target.getAttribute('data-content'), btn)
 })

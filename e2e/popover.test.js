@@ -19,18 +19,20 @@ describe('Page start', () => {
       });
     });
     browser = await puppeteer.launch({
-      // headless: false,
-      // slowMo: 50,
-      // devtools: true,
+    //   headless: false,
+    //   slowMo: 50,
+    //   devtools: true,
     });
 
     page = await browser.newPage();
   });
 
-  test("start", async () => {
-    await page.goto("http://localhost:9000");
 
-    await page.waitForSelector("body");
+  test('should add popover', async () => {
+    await page.goto("http://localhost:9000");
+    const button = await page.$('button');
+    button.click();
+    await page.waitForSelector('.popover');
   });
 
   afterAll(async () => {
