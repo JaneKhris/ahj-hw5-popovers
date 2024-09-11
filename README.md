@@ -1,4 +1,4 @@
-## Домашнее задание к занятию "5. Работа с HTML-формами"
+## Домашнее задание к занятию "5.Работа с HTML-формами"
 ### Задача "Popovers"
 
 ![CI](https://github.com/JaneKhris/ahj-hw5-popovers/actions/workflows/web.yml/badge.svg)
