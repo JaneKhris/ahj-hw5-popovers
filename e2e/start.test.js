@@ -11,9 +11,9 @@ describe('Page start', () => {
   beforeAll(async () => {
     server = fork(`${__dirname}/e2e.server.js`);
     await new Promise((resolve, reject) => {
-      server.on("error", reject);
-      server.on("message", (message) => {
-        if (message === "ok") {
+      server.on('error', reject);
+      server.on('message', (message) => {
+        if (message === 'ok') {
           resolve();
         }
       });
@@ -27,15 +27,14 @@ describe('Page start', () => {
     page = await browser.newPage();
   });
 
-  test("start", async () => {
-    await page.goto("http://localhost:9000");
+  test('start', async () => {
+    await page.goto('http://localhost:9000');
 
-    await page.waitForSelector("body");
+    await page.waitForSelector('body');
   });
 
   afterAll(async () => {
     await browser.close();
     server.kill();
   });
-
 });

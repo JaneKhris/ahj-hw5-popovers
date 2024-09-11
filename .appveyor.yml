@@ -7,5 +7,5 @@ cache: node_modules # кеширование
 install:
   - npm install # команда установки зависимостей
 build: off
-test_script:
-  - npm run lint # скрипт сборки
+build_script:
+  - npm run build   # команда сборки
